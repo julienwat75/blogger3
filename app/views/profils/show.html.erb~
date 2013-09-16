@@ -1,4 +1,9 @@
-<h1><%= @profil.nom %></h1>
-<p><%= @profil.body %></p>
+<h1><%= @profils.nom %></h1>
+
+<p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Really delete the article?"}
+
+ %></p>
+
 <%= link_to "<< Back to Articles List", profils_path %>
+
 

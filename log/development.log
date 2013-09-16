@@ -7975,3 +7975,2697 @@ Processing by ProfilsController#show as HTML
   [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "15"]]
   Rendered profils/show.html.erb within layouts/application (0.4ms)
 Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-16 13:42:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 51ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 13:42:19 +0200
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-16 13:42:21 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/new.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/profils" for 127.0.0.1 at 2013-09-16 13:42:36 +0200
+Processing by ProfilsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "profil"=>{"nom"=>"gerard", "body"=>"description"}, "commit"=>"Create Profil"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: profils):
+  app/controllers/profils_controller.rb:28:in `profil_params'
+  app/controllers/profils_controller.rb:19:in `create'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started POST "/profils" for 127.0.0.1 at 2013-09-16 13:43:10 +0200
+Processing by ProfilsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "profil"=>{"nom"=>"gerard", "body"=>"description"}, "commit"=>"Create Profil"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.9ms)[0m  INSERT INTO "profils" ("body", "created_at", "nom", "updated_at") VALUES (?, ?, ?, ?)  [["body", "description"], ["created_at", Mon, 16 Sep 2013 11:43:11 UTC +00:00], ["nom", "gerard"], ["updated_at", Mon, 16 Sep 2013 11:43:11 UTC +00:00]]
+  [1m[36m (125.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 172ms (ActiveRecord: 129.6ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.5ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 13:43:11 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-16 13:52:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /var/lib/gems/1.9.1/gems/railties-4.0.0/lib/rails/templates/rails/welcome/index.html.erb (2.4ms)
+Completed 200 OK in 52ms (Views: 34.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 13:52:30 +0200
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-16 13:52:33 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/new.html.erb within layouts/application (51.9ms)
+Completed 200 OK in 58ms (Views: 56.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 13:52:39 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.4ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_profils_path' for #<#<Class:0x0000000305b8d0>:0x00000003408988>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", profils_path %></p>
+    4: <%= link_to "<< Back to Articles List", destroy_profils_path %>
+  app/views/profils/show.html.erb:4:in `_app_views_profils_show_html_erb__812785907209709577_27486900'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 13:52:39 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_profils_path' for #<#<Class:0x0000000305b8d0>:0x0000000319da90>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", profils_path %></p>
+    4: <%= link_to "<< Back to Articles List", destroy_profils_path %>
+  app/views/profils/show.html.erb:4:in `_app_views_profils_show_html_erb__812785907209709577_26010220'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 13:53:38 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (36.8ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined local variable or method `destroy_profils_path' for #<#<Class:0x0000000305b8d0>:0x0000000374eae8>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", destroy_profils_path %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_29010520'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:13:25 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x0000000319ae08>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_26004620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:31 +0200
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-16 14:13:41 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/profils" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+Processing by ProfilsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "profil"=>{"nom"=>"jhjhkhjkhjk", "body"=>";,:,;:,:;,:;,:;,"}, "commit"=>"Create Profil"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (33.5ms)[0m  [1mINSERT INTO "profils" ("body", "created_at", "nom", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", ";,:,;:,:;,:;,:;,"], ["created_at", Mon, 16 Sep 2013 12:13:49 UTC +00:00], ["nom", "jhjhkhjkhjk"], ["updated_at", Mon, 16 Sep 2013 12:13:49 UTC +00:00]]
+  [1m[35m (126.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 168ms (ActiveRecord: 160.4ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:13:49 +0200
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:15:17 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x0000000363d280>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28450580'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:15:17 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x000000036b0870>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_26004620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.7ms)
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:15:30 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (38.1ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x00000003736308>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28450580'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.5ms)
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:15:30 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x0000000353b030>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_26004620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:17:58 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x0000000372ac10>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path(profils) %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28935020'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:17:58 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x000000036b8b60>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path(profils) %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28687060'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.8ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:19:36 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (39.5ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x00000003642578>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "Supprimer", some_path %></p>
+    4: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28444640'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:20:50 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined method `article_path' for #<#<Class:0x0000000305b8d0>:0x00000003550688>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %> <%= link_to "delete", article_path(@article) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_27949340'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.6ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:21:53 +0200
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:21:56 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x00000003767b10>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", some_path %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_29045480'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:21:57 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (11.3ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `some_path' for #<#<Class:0x0000000305b8d0>:0x000000034f6b60>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", some_path %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_27765540'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:25:02 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 14:25:08 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 14:25:15 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.4ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:27:05 +0200
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:27:08 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils.2" for 127.0.0.1 at 2013-09-16 14:27:10 +0200
+Processing by ProfilsController#index as 
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 14:27:37 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered profils/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 14:27:38 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 14:27:42 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered profils/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils.3" for 127.0.0.1 at 2013-09-16 14:27:44 +0200
+Processing by ProfilsController#index as 
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:31:58 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 11ms (Views: 8.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils.2" for 127.0.0.1 at 2013-09-16 14:32:00 +0200
+Processing by ProfilsController#index as 
+  [1m[35mProfil Load (0.5ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:34:10 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils.3" for 127.0.0.1 at 2013-09-16 14:34:12 +0200
+Processing by ProfilsController#index as 
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:34:18 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 14:36:21 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:36:22 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `profil' for #<#<Class:0x0000000305b8d0>:0x00000003637c90>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(profil) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28422760'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.1ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:36:22 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `profil' for #<#<Class:0x0000000305b8d0>:0x000000030641d8>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(profil) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_25367960'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:36:52 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x0000000375edf8>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(profils) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_29027620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:36:57 +0200
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:37:00 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x0000000369b510>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(profils) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28626760'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:37:00 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x000000035c5fa0>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(profils) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_29027620'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:38:00 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (7.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x0000000305f2f0>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profils_path(profils) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_25357500'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.5ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:38:05 +0200
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:38:07 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x0000000330a248>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profils_path(profils) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_26756440'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.0ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:38:07 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000305b8d0>:0x00000003699490>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profils_path(profils) %></p>
+    4: 
+    5: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_25357500'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:40:32 +0200
+
+
+Started GET "/profils.2" for 127.0.0.1 at 2013-09-16 14:40:35 +0200
+Processing by ProfilsController#index as 
+  [1m[35mProfil Load (0.5ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:48 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:50 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:51 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:53 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 7.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:54 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:57 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:58 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:59 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:40:59 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 14:41:04 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProfil Load (0.1ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered profils/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 14:41:08 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 14:42:02 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:42:04 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:42:06 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.5ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 14:42:10 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:42:13 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.5ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:42:33 +0200
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:42:35 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:42:37 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:42:38 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:43:33 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 14:44:19 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered profils/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/3" for 127.0.0.1 at 2013-09-16 14:44:42 +0200
+
+AbstractController::ActionNotFound (The action 'destroy' could not be found for ProfilsController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1796930706280000989__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.6ms)
+
+
+Started DELETE "/profils/3" for 127.0.0.1 at 2013-09-16 14:48:39 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"3"}
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template profils/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__4346502482429462415__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1796930706280000989__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started DELETE "/profils/3" for 127.0.0.1 at 2013-09-16 14:50:07 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"3"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 16ms
+
+ActionView::MissingTemplate (Missing template profils/destroy, application/destroy with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__4346502482429462415__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1796930706280000989__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.5ms)
+
+
+Started DELETE "/profils/3" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"3"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered profils/destroy.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:51:10 +0200
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.5ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:55:36 +0200
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 14:55:38 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/1" for 127.0.0.1 at 2013-09-16 14:55:43 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"1"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered profils/destroy.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x00000003261df0>:0x00000003772b50>):
+    1: <h1><%= @profils.id %></h1>
+    2: 
+    3: <% id=profils.id  %>
+    4: 
+    5: <p> Destruction du profil <%=id %> </p>
+  app/views/profils/destroy.html.erb:3:in `_app_views_profils_destroy_html_erb__2338214027181075902_29067900'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started DELETE "/profils/1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"1"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered profils/destroy.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:23 +0200
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 14:56:42 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered profils/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/3" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"3"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered profils/destroy.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 14:56:44 +0200
+
+
+Started GET "/profils/2" for 127.0.0.1 at 2013-09-16 15:07:38 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/2" for 127.0.0.1 at 2013-09-16 15:07:40 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"2"}
+  [1m[35mProfil Load (0.1ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered profils/destroy.html.erb within layouts/application (8.1ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x00000003261df0>:0x0000000340af30>):
+    1: <h1><%= @profils.id %></h1>
+    2: 
+    3: <% id=@profils.id  %>
+    4: <% profils.destroy %>
+    5: <p> Destruction du profil <%=id %> </p>
+  app/views/profils/destroy.html.erb:4:in `_app_views_profils_destroy_html_erb__2338214027181075902_27282200'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started DELETE "/profils/2" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"2"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "profils" WHERE "profils"."id" = ?[0m  [["id", 2]]
+  [1m[35m (158.7ms)[0m  commit transaction
+  Rendered profils/destroy.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 184ms (Views: 8.4ms | ActiveRecord: 159.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:14 +0200
+
+
+Started GET "/profils/16" for 127.0.0.1 at 2013-09-16 15:17:36 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "16"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/16" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"16"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "16"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 16]]
+  [1m[36m (153.6ms)[0m  [1mcommit transaction[0m
+  Rendered profils/destroy.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 162ms (Views: 5.4ms | ActiveRecord: 154.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:17:38 +0200
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:17:55 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.5ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profils/15" for 127.0.0.1 at 2013-09-16 15:18:07 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/15" for 127.0.0.1 at 2013-09-16 15:18:09 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"15"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "15"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 15]]
+  [1m[36m (138.5ms)[0m  [1mcommit transaction[0m
+  Rendered profils/destroy.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 149ms (Views: 6.7ms | ActiveRecord: 138.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:18:10 +0200
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:18:16 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/1" for 127.0.0.1 at 2013-09-16 15:19:06 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered profils/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"1"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 1]]
+  [1m[36m (165.9ms)[0m  [1mcommit transaction[0m
+  Rendered profils/destroy.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 177ms (Views: 6.3ms | ActiveRecord: 166.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:15 +0200
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:19:26 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 15:19:28 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered profils/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/profils/3" for 127.0.0.1 at 2013-09-16 15:19:29 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"3"}
+  [1m[35mProfil Load (0.1ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 3]]
+  [1m[36m (135.4ms)[0m  [1mcommit transaction[0m
+  Rendered profils/destroy.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 144ms (Views: 6.4ms | ActiveRecord: 135.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:29 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:29 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:29 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:30 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:30 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:30 +0200
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 15:19:37 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "3"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Profil with id=3):
+  app/controllers/profils_controller.rb:14:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/profils/3" for 127.0.0.1 at 2013-09-16 15:19:37 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Profil with id=3):
+  app/controllers/profils_controller.rb:14:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.1ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:19:39 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:19:40 +0200
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-16 15:19:50 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/profils" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+Processing by ProfilsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "profil"=>{"nom"=>"george", "body"=>"mlklmklmkmlkmklmklm d"}, "commit"=>"Create Profil"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "profils" ("body", "created_at", "nom", "updated_at") VALUES (?, ?, ?, ?)  [["body", "mlklmklmkmlkmklmklm d"], ["created_at", Mon, 16 Sep 2013 13:20:04 UTC +00:00], ["nom", "george"], ["updated_at", Mon, 16 Sep 2013 13:20:04 UTC +00:00]]
+  [1m[36m (121.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 128ms (ActiveRecord: 122.5ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:04 +0200
+
+
+Started GET "/profils/18" for 127.0.0.1 at 2013-09-16 15:20:13 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "18"]]
+  Rendered profils/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/18" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"18"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "18"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 18]]
+  [1m[36m (133.4ms)[0m  [1mcommit transaction[0m
+  Rendered profils/destroy.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 144ms (Views: 6.4ms | ActiveRecord: 134.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:20:18 +0200
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:25:08 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.1ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profils/5" for 127.0.0.1 at 2013-09-16 15:25:13 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProfil Load (0.4ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered profils/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/profils/5" for 127.0.0.1 at 2013-09-16 15:25:14 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"5"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "5"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 5]]
+  [1m[36m (133.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 139ms (ActiveRecord: 134.4ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:25:14 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:15 +0200
+
+
+Started GET "/profils/7" for 127.0.0.1 at 2013-09-16 15:25:18 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  Rendered profils/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/7" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"7"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "7"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 7]]
+  [1m[36m (150.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 154ms (ActiveRecord: 151.0ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:19 +0200
+
+
+Started GET "/profils/4" for 127.0.0.1 at 2013-09-16 15:25:21 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/4" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"4"}
+  [1m[35mProfil Load (0.1ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 4]]
+  [1m[36m (155.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 159ms (ActiveRecord: 156.0ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:22 +0200
+
+
+Started GET "/profils/14" for 127.0.0.1 at 2013-09-16 15:25:30 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "14"]]
+  Rendered profils/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/14" for 127.0.0.1 at 2013-09-16 15:25:31 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"14"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "14"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 14]]
+  [1m[36m (159.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 164ms (ActiveRecord: 160.0ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:32 +0200
+
+
+Started GET "/profils/9" for 127.0.0.1 at 2013-09-16 15:25:34 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "9"]]
+  Rendered profils/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/9" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"9"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "9"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "profils" WHERE "profils"."id" = ?  [["id", 9]]
+  [1m[36m (153.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 157ms (ActiveRecord: 154.1ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:25:36 +0200
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:26:06 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils/10" for 127.0.0.1 at 2013-09-16 15:27:30 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "10"]]
+  Rendered profils/show.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/10" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"10"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "10"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "profils" WHERE "profils"."id" = ?[0m  [["id", 10]]
+  [1m[35m (143.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 146ms (ActiveRecord: 143.4ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:27:35 +0200
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-16 15:34:00 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (13.7ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x00000003741a50>:0x000000031841f8>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method:delete,data: {confirm: "Really delete the article?"}
+    4:  %></p>
+    5: 
+    6: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_27964080'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.4ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-16 15:34:00 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x00000003741a50>:0x000000036be060>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method:delete,data: {confirm: "Really delete the article?"}
+    4:  %></p>
+    5: 
+    6: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28698140'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-16 15:34:40 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x00000003741a50>:0x0000000363e590>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method:delete
+    4:  %></p>
+    5: 
+    6: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_28436420'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (16.7ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-16 15:34:40 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x00000003741a50>:0x000000032560b8>):
+    1: <h1><%= @profils.nom %></h1>
+    2: 
+    3: <p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method:delete
+    4:  %></p>
+    5: 
+    6: <%= link_to "<< Back to Articles List", profils_path %>
+  app/views/profils/show.html.erb:3:in `_app_views_profils_show_html_erb__812785907209709577_25371440'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/profils/11" for 127.0.0.1 at 2013-09-16 15:35:50 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "11"]]
+  Rendered profils/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/11" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"11"}
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "11"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "profils" WHERE "profils"."id" = ?[0m  [["id", 11]]
+  [1m[35m (164.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 170ms (ActiveRecord: 165.1ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.4ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 12ms (Views: 9.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:37 +0200
+
+
+Started GET "/profils/12" for 127.0.0.1 at 2013-09-16 15:36:49 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "12"]]
+  Rendered profils/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/profils/12" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+Processing by ProfilsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E1Dvd86NhUgBsl0eS2BbZWKFcr7T7n7Pqz967JXYIkM=", "id"=>"12"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "12"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "profils" WHERE "profils"."id" = ?[0m  [["id", 12]]
+  [1m[35m (139.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 144ms (ActiveRecord: 140.1ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-16 15:36:53 +0200
+
+
+Started GET "/profils/13" for 127.0.0.1 at 2013-09-16 15:37:03 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "13"]]
+  Rendered profils/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-16 15:37:56 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils/13" for 127.0.0.1 at 2013-09-16 15:38:08 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "13"]]
+  Rendered profils/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms)
