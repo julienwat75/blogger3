@@ -1,0 +1,13 @@
+<h1>All Articles</h1>
+
+<ul id="articles">
+  <% @profils.each do |profil| %>
+    <li> <%= link_to profil.nom, profil_path(profil),class: 'article_title' %></li>
+    <li> <%= profil.body %> </li>
+
+  <br><br>
+  <% end %>
+</ul>
+
+
+<%= link_to "Create a New Profil", new_profil5_path, class: "new_article" %>
