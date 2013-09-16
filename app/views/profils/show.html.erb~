@@ -1,1 +1,4 @@
-<h1> Page create profils </h1>
+<h1><%= @profil.nom %></h1>
+<p><%= @profil.body %></p>
+<%= link_to "<< Back to Articles List", profils_path %>
+

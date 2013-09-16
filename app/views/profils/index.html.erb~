@@ -10,4 +10,4 @@
 </ul>
 
 
-<%= link_to "Create a New Profil", new_profil5_path, class: "new_article" %>
+<%= link_to "Create a New Profil", new_profil_path, class: "new_article" %>
