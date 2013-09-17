@@ -12968,3 +12968,737 @@ Processing by ProfilsController#new as HTML
   Rendered profils/_form.html.erb (2.5ms)
   Rendered profils/new.html.erb within layouts/application (3.7ms)
 Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" ORDER BY "profils"."id" ASC LIMIT 1[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20130917094730)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "author_name" varchar(255), "body" text, "profil_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE INDEX "index_comments_on_profil_id" ON "comments" ("profil_id")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20130917094730"]]
+  [1m[35m (153.9ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" ORDER BY "profils"."id" ASC LIMIT 1[0m
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils" ORDER BY "profils"."id" ASC LIMIT 1
+  [1m[36mProfil Load (0.4ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  [1m[35mProfil Load (5.4ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-17 12:40:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 91ms (Views: 71.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-17 12:40:10 +0200
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-17 12:40:21 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/_form.html.erb (18.6ms)
+  Rendered profils/new.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.0ms)
+  [1m[36mProfil Load (3.0ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mProfil Load (2.8ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "comments" ("author_name", "body", "created_at", "profil_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["author_name", "jean pierre"], ["body", " cette personne est fiable"], ["created_at", Tue, 17 Sep 2013 11:43:55 UTC +00:00], ["profil_id", 8], ["updated_at", Tue, 17 Sep 2013 11:43:55 UTC +00:00]]
+  [1m[36m (139.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "comments" ("author_name", "body", "created_at", "profil_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["author_name", "louis"], ["body", "bonjour"], ["created_at", Tue, 17 Sep 2013 11:45:53 UTC +00:00], ["profil_id", 8], ["updated_at", Tue, 17 Sep 2013 11:45:53 UTC +00:00]]
+  [1m[35m (145.6ms)[0m  commit transaction
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:15:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (2.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (150.1ms)
+Completed 500 Internal Server Error in 223ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_29234700'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.5ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:16:00 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_30389180'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.9ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:22:02 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+     5: 
+     6: <h3>Comments</h3>
+     7: 
+     8: #<%= render partial: 'profils/comment', collection: @profils.comments %>
+     9: 
+    10: 
+    11:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:8:in `_app_views_profils_show_html_erb___3553707438964866568_31702040'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.4ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:22:02 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+     5: 
+     6: <h3>Comments</h3>
+     7: 
+     8: #<%= render partial: 'profils/comment', collection: @profils.comments %>
+     9: 
+    10: 
+    11:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:8:in `_app_views_profils_show_html_erb___3553707438964866568_31930440'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:29:10 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 78ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:32:30 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 17ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000356b460>:0x0000000356cdb0>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= profils.comment.author_name %></h4>
+    10:   <p class="comment"><%= profils.comment.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_28007300'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:32:30 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000356b460>:0x00000003d45618>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= profils.comment.author_name %></h4>
+    10:   <p class="comment"><%= profils.comment.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_32137100'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.5ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:33:49 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000356b460>:0x00000003d12e20>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= profils.comments.author_name %></h4>
+    10:   <p class="comment"><%= profils.comments.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_32017060'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:33:49 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (38.9ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (undefined local variable or method `profils' for #<#<Class:0x0000000356b460>:0x00000003d49088>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= profils.comments.author_name %></h4>
+    10:   <p class="comment"><%= profils.comments.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_32128400'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/profils/13" for 127.0.0.1 at 2013-09-17 14:41:10 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "13"]]
+  Rendered profils/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `comment' for #<Profil:0x00000003b6c300>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= @profils.comment.author_name %></h4>
+    10:   <p class="comment"><%= @profils.comment.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_31166240'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.8ms)
+
+
+Started GET "/profils/13" for 127.0.0.1 at 2013-09-17 14:41:10 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "13"]]
+  Rendered profils/show.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `comment' for #<Profil:0x00000003d77730>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= @profils.comment.author_name %></h4>
+    10:   <p class="comment"><%= @profils.comment.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_32222080'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:41:47 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `author_name' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Comment:0x00000003ced9e0>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= @profils.comments.author_name %></h4>
+    10:   <p class="comment"><%= @profils.comments.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_31959780'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:41:47 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (undefined method `author_name' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Comment:0x00000003c4d3a0>):
+     6: <h3>Comments</h3>
+     7: 
+     8: <div>
+     9:   <h4>Comment by <%= @profils.comments.author_name %></h4>
+    10:   <p class="comment"><%= @profils.comments.body %></p>
+    11: </div>
+    12: 
+  app/views/profils/show.html.erb:9:in `_app_views_profils_show_html_erb___3553707438964866568_31631600'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:42:57 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.4ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Comment:0x00000003b34e28>):
+     7: 
+     8: <div>
+     9:   <h4>Comment by </h4>
+    10:   <p class="comment"><%= @profils.comments.body %></p>
+    11: </div>
+    12: 
+    13: 
+  app/views/profils/show.html.erb:10:in `_app_views_profils_show_html_erb___3553707438964866568_31057100'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.1ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:42:57 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `body' for #<ActiveRecord::Associations::CollectionProxy::ActiveRecord_Associations_CollectionProxy_Comment:0x00000003cac878>):
+     7: 
+     8: <div>
+     9:   <h4>Comment by </h4>
+    10:   <p class="comment"><%= @profils.comments.body %></p>
+    11: </div>
+    12: 
+    13: 
+  app/views/profils/show.html.erb:10:in `_app_views_profils_show_html_erb___3553707438964866568_31824680'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:43:54 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered profils/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:45:51 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_31155480'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.9ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:45:51 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_31970240'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:54:26 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/_comment.html.erb (0.5ms)
+  Rendered profils/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:56:13 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.3ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/_comment.html.erb (0.1ms)
+  Rendered profils/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 10ms (Views: 7.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/13" for 127.0.0.1 at 2013-09-17 14:58:28 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 13]]
+  Rendered profils/show.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_30906700'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (24.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.2ms)
+
+
+Started GET "/profils/13" for 127.0.0.1 at 2013-09-17 14:58:28 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 13]]
+  Rendered profils/show.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_31948000'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.7ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:58:43 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (2.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html, :xml], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_30906700'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.4ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:58:43 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (Missing partial profils/comment with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/home/julienlinux/Documents/profil/blogger3/app/views"
+):
+    4: 
+    5: 
+    6: <h3>Comments</h3>
+    7: <%= render partial: 'profils/comment', collection: @profils.comments %>
+    8: 
+    9: 
+   10:  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+  app/views/profils/show.html.erb:7:in `_app_views_profils_show_html_erb___3553707438964866568_31948000'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.0ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 14:59:57 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "8"]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 8]]
+  Rendered profils/_comment.html.erb (1.0ms)
+  Rendered profils/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-17 15:00:09 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/_form.html.erb (49.8ms)
+  Rendered profils/new.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/profils" for 127.0.0.1 at 2013-09-17 15:00:37 +0200
+Processing by ProfilsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OLdWCe/qdgz4bW6W0kX4dnU5PGyOy3KwgKFuiz59v8I=", "profil"=>{"nom"=>"Alexandre ", "body"=>"je propose des cours de cuisine "}, "commit"=>"Create Profil"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "profils" ("body", "created_at", "nom", "updated_at") VALUES (?, ?, ?, ?)[0m  [["body", "je propose des cours de cuisine "], ["created_at", Tue, 17 Sep 2013 13:00:37 UTC +00:00], ["nom", "Alexandre "], ["updated_at", Tue, 17 Sep 2013 13:00:37 UTC +00:00]]
+  [1m[35m (155.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/profils
+Completed 302 Found in 167ms (ActiveRecord: 158.5ms)
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.4ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-17 15:00:38 +0200
+  [1m[36mProfil Load (5.7ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "comments" ("body", "created_at", "profil_id", "updated_at") VALUES (?, ?, ?, ?)  [["body", "hey"], ["created_at", Tue, 17 Sep 2013 13:34:58 UTC +00:00], ["profil_id", 8], ["updated_at", Tue, 17 Sep 2013 13:34:58 UTC +00:00]]
+  [1m[36m (146.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/profils/13" for 127.0.0.1 at 2013-09-17 15:37:20 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "13"]]
+  [1m[36mComment Load (2.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?[0m  [["profil_id", 13]]
+  Rendered profils/_comment.html.erb (0.0ms)
+  Rendered profils/show.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 167ms (Views: 129.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-17 15:37:21 +0200
+
+
+Started GET "/profils" for 127.0.0.1 at 2013-09-17 15:37:25 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/profils/8" for 127.0.0.1 at 2013-09-17 15:37:27 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProfil Load (0.3ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."profil_id" = ?  [["profil_id", 8]]
+  Rendered profils/_comment.html.erb (0.8ms)
+  Rendered profils/show.html.erb within layouts/application (74.9ms)
+Completed 200 OK in 82ms (Views: 79.2ms | ActiveRecord: 0.7ms)

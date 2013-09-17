@@ -1,9 +1,18 @@
 <h1><%= @profils.nom %></h1>
 
-<p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}
+<p><%= @profils.body %> 
 
- %></p>
+
+<h3>Comments</h3>
+<%= render partial: 'comment', collection: @profils.comments %>
+
+
+ <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
+
+</p>
 
 <%= link_to "<< Back to Articles List", profils_path %>
 
+<br><br>
 
+<%= link_to "edit", edit_profil_path(@profils) %>
