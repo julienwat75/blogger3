@@ -1,6 +1,6 @@
 <h1><%= @profils.nom %></h1>
 
-<p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Really delete the article?"}
+<p><%= @profils.body %>  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}
 
  %></p>
 

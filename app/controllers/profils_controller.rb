@@ -15,6 +15,18 @@ def show
 
 end
 
+def edit
+  @profils = Profil.find(params[:id]) #reccupere l'id de l url
+
+end
+
+def update
+  @profils = Profil.find(params[:id])
+  @profils.update(profil_params)
+
+  redirect_to profils_path
+end
+
 def create              # le submit va chercher la methode create
   @profils = Profil.new(profil_params)
   @profils.nom = params[:profil][:nom]  # on reccupere le nom du form
@@ -23,6 +35,8 @@ def create              # le submit va chercher la methode create
    redirect_to profils_path     # redirection vers l'index
 
 end
+
+
 
 def destroy
 
