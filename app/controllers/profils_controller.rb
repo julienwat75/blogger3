@@ -7,11 +7,14 @@ end
 
 def new
   @profils = Profil.new
+  
 end
 
 
 def show
   @profils = Profil.find(params[:id]) #reccupere l'id de l url
+   @comment = Comment.new
+  @comment.profil_id = @profils.id   # On initialise l'element "profil_id" de l objet "comment" avec l'id du profil
 
 end
 

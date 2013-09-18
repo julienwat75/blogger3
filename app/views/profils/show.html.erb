@@ -1,10 +1,16 @@
 <h1><%= @profils.nom %></h1>
 
-<p><%= @profils.body %> 
+
+
+<p><%= @profils.body %> <%= @comment.profil_id  %>
 
 
 <h3>Comments</h3>
-<%= render partial: 'profils/comment', collection: @profils.comments %>
+<%= render partial: 'profils/profils/comment', collection: @profils.comments %>
+
+
+
+<%= render partial: 'profils/comments/form' %>
 
 
  <%= link_to "delete", profil_path(@profils),method: :delete,data: {confirm: "Voulez vous vraiment effacer?"}%>
