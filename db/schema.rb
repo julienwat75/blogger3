@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130917094730) do
+ActiveRecord::Schema.define(version: 20130918093604) do
 
   create_table "comments", force: true do |t|
     t.string   "author_name"
@@ -22,6 +22,24 @@ ActiveRecord::Schema.define(version: 20130917094730) do
   end
 
   add_index "comments", ["profil_id"], name: "index_comments_on_profil_id"
+
+  create_table "invitations", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "offres", force: true do |t|
+    t.string   "titre"
+    t.text     "description"
+    t.text     "adresse_photo"
+    t.string   "auteur"
+    t.string   "prix"
+    t.integer  "profil_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "offres", ["profil_id"], name: "index_offres_on_profil_id"
 
   create_table "profils", force: true do |t|
     t.string   "nom"

@@ -1,0 +1,16 @@
+<h1>index offres</h1>
+bonjour
+
+<ul id="articles">
+
+hello
+  <% @offres.each do |offre| %>
+    <li> <%= link_to offre.titre, offre_path(offre),class: 'article_title' %></li>
+         <%= offre.description %>
+  <% end %>
+</ul>
+
+
+<%= render partial: 'offres/partial/form' %>
+
+
