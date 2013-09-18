@@ -3,12 +3,17 @@
 
 <ul id="articles">
 
-hello
+
   <% @offres.each do |offre| %>
     <li> <%= link_to offre.titre, offre_path(offre),class: 'article_title' %></li>
-         <%= offre.description %>
+      <li>   <%= offre.description %> </li>
+      <li>   <%= offre.profil_id %> </li>
+       <li>   <%= offre.auteur %> </li>
   <% end %>
-</ul>
+
+
+
+    </ul>
 
 
 <%= render partial: 'offres/partial/form' %>

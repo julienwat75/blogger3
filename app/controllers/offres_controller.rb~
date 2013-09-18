@@ -3,11 +3,18 @@ class OffresController < ApplicationController
 
 def index
 
-@profils=Profil.all
+ @offres=Offre.all 
+
 
 end
 
 
+def show
+
+ @offres=Offre.all 
+
+
+end
 
 
 

@@ -13,7 +13,6 @@
 
 <h3>Offres:</h3>
 
-<%= render partial: 'profils/profils/offres' %>
 
 
 

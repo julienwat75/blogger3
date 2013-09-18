@@ -1,0 +1,5 @@
+<h1>le show</h1>
+
+
+
+<%= @offres.profil_id  %>

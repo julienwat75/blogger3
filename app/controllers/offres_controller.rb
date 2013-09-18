@@ -9,6 +9,12 @@ def index
 end
 
 
+def show
+
+ 
+ @offres = Offre.find(params[:id]) #reccupere l'id de l url
+
+end
 
 
 
