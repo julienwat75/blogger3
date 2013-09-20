@@ -5,9 +5,9 @@
 
 
   <% @offres.each do |offre| %>
-    <li> <%= link_to offre.titre, offre_path(offre),class: 'article_title' %></li>  #envoie lien vers page show avec l'id de l offre 
+  <li> <%= link_to offre.titre, offre_path(offre),class: 'article_title' %> </li> <!-- envoie lien vers page show avec l'id de l offre -->
       <li>   <%= offre.description %> </li>
-      <li>   <%= offre.profil_id %> </li>
+      <li>  Profil_id <%= offre.profil_id %> </li>
        <li>   <%= offre.auteur %> </li>
   <% end %>
 
@@ -16,6 +16,11 @@
     </ul>
 
 
+
 <%= render partial: 'offres/partial/form' %>
+
+
+
+
 
 
