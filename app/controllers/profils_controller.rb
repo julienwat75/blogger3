@@ -34,6 +34,7 @@ def create              # le submit va chercher la methode create
   @profils = Profil.new(profil_params)
   @profils.nom = params[:profil][:nom]  # on reccupere le nom du form
   @profils.body = params[:profil][:body] # on reccupere le body du form 
+  
   @profils.save   #on sauvegarde
    redirect_to profils_path     # redirection vers l'index
 
@@ -49,7 +50,7 @@ redirect_to profils_path
 end
 
  def profil_params
-    params.require(:profil).permit(:nom, :body)
+    params.require(:profil).permit(:nom, :body, :tag_list)
   end
 
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130918093604) do
+ActiveRecord::Schema.define(version: 20130923101009) do
 
   create_table "comments", force: true do |t|
     t.string   "author_name"
@@ -44,6 +44,22 @@ ActiveRecord::Schema.define(version: 20130918093604) do
   create_table "profils", force: true do |t|
     t.string   "nom"
     t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "taggings", force: true do |t|
+    t.integer  "tag_id"
+    t.integer  "profil_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "taggings", ["profil_id"], name: "index_taggings_on_profil_id"
+  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id"
+
+  create_table "tags", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
