@@ -3,9 +3,11 @@ class CreateOffres < ActiveRecord::Migration
     create_table :offres do |t|
       t.string :titre
       t.text :description
-      t.text :adresse_photo
+      t.string :nom_restaurant
+      t.text :photo
       t.string :auteur
-      t.string :prix
+      t.float :prix_medium
+      t.float :prix_large
       t.references :profil, index: true
       t.timestamps
     end

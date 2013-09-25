@@ -39,8 +39,12 @@ def create              # le submit va chercher la methode create
   
 
   @offres = Offre.new(profil_params)
+  @offres.nom_restaurant = params[:offre][:nom_restaurant]  # on reccupere le nom du form
   @offres.titre = params[:offre][:titre]  # on reccupere le nom du form
   @offres.description = params[:offre][:description] # on reccupere le body du form 
+  @offres.prix_medium = params[:offre][:prix_medium]  # on reccupere le nom du form
+  @offres.prix_large = params[:offre][:prix_large]  # on reccupere le
+  @offres.photo = params[:offre][:photo] 
   @offres.profil_id ="8"
   @offres.save   #on sauvegarde
    redirect_to offres_path     # redirection vers l'index
@@ -48,7 +52,7 @@ def create              # le submit va chercher la methode create
 end
 
 def profil_params
-    params.require(:offre).permit(:titre, :description)
+    params.require(:offre).permit( :nom_restaurant,:titre, :description, :prix_medium, :prix_large, :photo)
   end
 
 

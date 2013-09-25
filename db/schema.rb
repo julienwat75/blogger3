@@ -40,9 +40,11 @@ ActiveRecord::Schema.define(version: 20130923194450) do
   create_table "offres", force: true do |t|
     t.string   "titre"
     t.text     "description"
-    t.text     "adresse_photo"
+    t.string   "nom_restaurant"
+    t.text     "photo"
     t.string   "auteur"
-    t.string   "prix"
+    t.float    "prix_medium"
+    t.float    "prix_large"
     t.integer  "profil_id"
     t.datetime "created_at"
     t.datetime "updated_at"

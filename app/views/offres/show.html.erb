@@ -14,7 +14,7 @@
 <!--  <%= image_tag("logo1.jpeg", :alt => "Application Exemple", :class => "round",  :height => "600",  :width => "400") %> -->
 
 <div class="image">
-<img alt="Application Exemple"  src="/images/pizza.png" height="400" width="400"/>
+<img alt="Application Exemple"  src="/images/<%= @offres.photo %>" height="400" width="400"/>
 </div>
 
 <div class="description">
@@ -26,13 +26,21 @@
 </div>
 
 
+<div class="adresse">
+
+	Description: <%= @offres.photo %> 
+
+</div>
+
+
+
 
 <div class="prix">
 <p>
-<h3>Medium: 5.50€ </h3>
+<h3>Medium: <%= @offres.prix_medium %> € </h3>
 </p>
 <p>
-<h3>Large: 7.50€ </h3>
+<h3>Large: <%= @offres.prix_large %> € </h3>
 
 </p>
 
