@@ -7,16 +7,59 @@
 
 
 
+
+
+<div class="container">
+
+<!--  <%= image_tag("logo1.jpeg", :alt => "Application Exemple", :class => "round",  :height => "600",  :width => "400") %> -->
+
+<div class="image">
+<img alt="Application Exemple"  src="/images/pizza.png" height="400" width="400"/>
+</div>
+
+<div class="description">
+
+<div class="ingredients">
+
+	Description: <%= @offres.description %> 
+
+</div>
+
+
+
+<div class="prix">
 <p>
-
-Description: <%= @offres.description %> 
-
+<h3>Medium: 5.50€ </h3>
+</p>
+<p>
+<h3>Large: 7.50€ </h3>
 
 </p>
 
 <p>
-
-profil_id: <%= @offres.profil_id %> 
-
-
+<div class="bouton1">
+  <ul>
+    <li><a href="#">Reserver</a></li>
+    
+  </ul>
+</div>
 </p>
+
+
+</div>
+
+
+ 
+
+
+
+</div>
+
+
+
+
+
+<br class="clear" /> 
+
+
+</div>

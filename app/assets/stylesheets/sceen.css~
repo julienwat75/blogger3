@@ -2,137 +2,15 @@
 div.field_with_errors label{color: red; font-weight:bold}
 div.field_with_errors input{border: 3px solid red}
 
-
- /* Mes css */ 
-
 body {
   background: red;
 }
-
-
-
-.image {
-  float: left;
-  background: pink;
-}
-
 
 .round {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
-}
-
-.description {
-  
-   background: blue;
-   height:400px;
-   width:350px; 
-   margin-left:15px;
-   float:left;
+   background: black;
 
 }
 
-
-.container {
-  width: 100%;
-  
-    background: black; 
-}
-
-.clear {
-clear:left;
-} 
-
-.prix{
-  
-   background: yellow;
-   width: 100%;
-   float:left;
-
-}
-
-.ingredients{
-  
-   background: pink;
-   height: 200px;
-   width:100%;
-   float:left;
-
-}
-
- .reserve1 {
-  
-  
-  display: block;  
-  text-align: center;
-  height: 20px;
-  color: #fff;
-  background: #006400;
- 
-}
-
-a {
-  color: yellow;
-  text-decoration: none;
-}
-
-a:hover {
-  color: yellow;
-  text-decoration: underline;
-}
-
-a:visited {
-  color: yellow;
-}
-
-
-nav {
-  
-}
-
-nav {
-  background-color: white;
-  padding: 0 0.7em;
-  white-space: nowrap;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0.2em 0;
-}
-
-nav ul li a {
-  padding: 0 5px;
-  font-weight: bold;
-}
-
-nav ul li a:visited {
-  color: #09c;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.bouton1 {
-
-  -moz-border-radius:    10px;
-  -webkit-border-radius: 10px;
-  border-radius:         10px;
-  background: green;
-  
-  margin-top: 40px;
-  padding: 10px;
-  color: yellow;
-  background: red;
-  font-weight: bold;
-  text-align: center;
-  font-size: 35px;
-}
