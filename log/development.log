@@ -46336,3 +46336,1378 @@ Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 19:28:58 +0200
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 19:28:58 +0200
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.1ms)[0m  SELECT "offres".* FROM "offres"
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb__4262091241700351493_24070580 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:20)
+  Rendered offres/partial/_form (0.7ms)
+  Rendered offres/index.html.erb within layouts/application (54.0ms)
+  [1m[36mAuthor Load (3.7ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 198ms (Views: 171.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 19:36:43 +0200
+
+
+Started GET "/offres/1" for 127.0.0.1 at 2013-09-25 19:38:23 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mOffre Load (0.4ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered offres/show.html.erb within layouts/application (4.6ms)
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 23ms (Views: 18.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/images/" for 127.0.0.1 at 2013-09-25 19:38:23 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (46.8ms)
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 19:38:56 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mOffre Load (0.1ms)[0m  SELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered offres/show.html.erb within layouts/application (3.8ms)
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 20ms (Views: 16.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mOffre Load (0.2ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered offres/show.html.erb within layouts/application (9.8ms)
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 19:52:55 +0200
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 19:53:00 +0200
+Processing by OffresController#index as HTML
+  [1m[36mOffre Load (0.3ms)[0m  [1mSELECT "offres".* FROM "offres"[0m
+  Rendered offres/index.html.erb within layouts/application (44.3ms)
+Completed 500 Internal Server Error in 48ms
+
+ActionView::Template::Error (undefined method `nom_restaurant' for #<ActiveRecord::Relation::ActiveRecord_Relation_Offre:0x007f91f40d5128>):
+    1: <h1><%= @offres.nom_restaurant %></h1>
+    2: 
+    3: 
+    4: <ul id="articles">
+  app/views/offres/index.html.erb:1:in `_app_views_offres_index_html_erb__4262091241700351493_70132420745920'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 19:54:15 +0200
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.4ms)[0m  SELECT "offres".* FROM "offres"
+  Rendered offres/index.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `photo' for #<ActiveRecord::Relation::ActiveRecord_Relation_Offre:0x0000000327a418>):
+    11: <!--  <%= image_tag("logo1.jpeg", :alt => "Application Exemple", :class => "round",  :height => "600",  :width => "400") %> -->
+    12: 
+    13: <div class="image">
+    14: <img alt="Application Exemple"  src="/images/<%= @offres.photo %>" height="200" width="200"/>
+    15: </div>
+    16: 
+    17: <div class="description_index">
+  app/views/offres/index.html.erb:14:in `block in _app_views_offres_index_html_erb__4262091241700351493_28117240'
+  app/views/offres/index.html.erb:7:in `_app_views_offres_index_html_erb__4262091241700351493_28117240'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+  [1m[36mOffre Load (2.8ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mUPDATE "offres" SET "photo" = ?, "updated_at" = ? WHERE "offres"."id" = 1[0m  [["photo", "pizza.png"], ["updated_at", Wed, 25 Sep 2013 17:57:11 UTC +00:00]]
+  [1m[35m (152.8ms)[0m  commit transaction
+  [1m[36mOffre Load (0.4ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "offres" SET "photo" = ?, "updated_at" = ? WHERE "offres"."id" = 2[0m  [["photo", "pizza1.png"], ["updated_at", Wed, 25 Sep 2013 17:57:59 UTC +00:00]]
+  [1m[35m (161.7ms)[0m  commit transaction
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 19:58:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres"
+  Rendered offres/index.html.erb within layouts/application (58.1ms)
+Completed 500 Internal Server Error in 112ms
+
+ActionView::Template::Error (undefined method `photo' for #<ActiveRecord::Relation::ActiveRecord_Relation_Offre:0x0000000462f1c0>):
+    11: <!--  <%= image_tag("logo1.jpeg", :alt => "Application Exemple", :class => "round",  :height => "600",  :width => "400") %> -->
+    12: 
+    13: <div class="image">
+    14: <img alt="Application Exemple"  src="/images/<%= @offres.photo %>" height="200" width="200"/>
+    15: </div>
+    16: 
+    17: <div class="description_index">
+  app/views/offres/index.html.erb:14:in `block in _app_views_offres_index_html_erb___680173093474714203_36255540'
+  app/views/offres/index.html.erb:7:in `_app_views_offres_index_html_erb___680173093474714203_36255540'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 19:58:30 +0200
+Processing by OffresController#index as HTML
+  [1m[36mOffre Load (0.3ms)[0m  [1mSELECT "offres".* FROM "offres"[0m
+  Rendered offres/index.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `photo' for #<ActiveRecord::Relation::ActiveRecord_Relation_Offre:0x00000004b8bc18>):
+    11: <!--  <%= image_tag("logo1.jpeg", :alt => "Application Exemple", :class => "round",  :height => "600",  :width => "400") %> -->
+    12: 
+    13: <div class="image">
+    14: <img alt="Application Exemple"  src="/images/<%= @offres.photo %>" height="200" width="200"/>
+    15: </div>
+    16: 
+    17: <div class="description_index">
+  app/views/offres/index.html.erb:14:in `block in _app_views_offres_index_html_erb___680173093474714203_40253200'
+  app/views/offres/index.html.erb:7:in `_app_views_offres_index_html_erb___680173093474714203_40253200'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.3ms)
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 19:58:30 +0200
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.3ms)[0m  SELECT "offres".* FROM "offres"
+  Rendered offres/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `photo' for #<ActiveRecord::Relation::ActiveRecord_Relation_Offre:0x007f30588d5c18>):
+    11: <!--  <%= image_tag("logo1.jpeg", :alt => "Application Exemple", :class => "round",  :height => "600",  :width => "400") %> -->
+    12: 
+    13: <div class="image">
+    14: <img alt="Application Exemple"  src="/images/<%= @offres.photo %>" height="200" width="200"/>
+    15: </div>
+    16: 
+    17: <div class="description_index">
+  app/views/offres/index.html.erb:14:in `block in _app_views_offres_index_html_erb___680173093474714203_36255540'
+  app/views/offres/index.html.erb:7:in `_app_views_offres_index_html_erb___680173093474714203_36255540'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (9.2ms)
+  [1m[36mOffre Load (2.8ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", 3]]
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 20:01:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres"
+  Rendered offres/index.html.erb within layouts/application (56.3ms)
+Completed 500 Internal Server Error in 111ms
+
+ActionView::Template::Error (undefined method `photo' for nil:NilClass):
+    11: <!--  <%= image_tag("logo1.jpeg", :alt => "Application Exemple", :class => "round",  :height => "600",  :width => "400") %> -->
+    12: 
+    13: <div class="image">
+    14:  <img alt="Application Exemple"  src="/images/<%= @offre.photo %>" height="200" width="200"/>
+    15: </div>
+    16: 
+    17: <div class="description_index">
+  app/views/offres/index.html.erb:14:in `block in _app_views_offres_index_html_erb__47738083612126070_34548800'
+  app/views/offres/index.html.erb:7:in `_app_views_offres_index_html_erb__47738083612126070_34548800'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (36.1ms)
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+Processing by OffresController#index as HTML
+  [1m[36mOffre Load (0.3ms)[0m  [1mSELECT "offres".* FROM "offres"[0m
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb__47738083612126070_32205640 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:39)
+  Rendered offres/partial/_form (0.7ms)
+  Rendered offres/index.html.erb within layouts/application (17.1ms)
+  [1m[35mAuthor Load (3.7ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 111ms (Views: 104.9ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 20:04:58 +0200
+
+
+Started GET "/offres/1" for 127.0.0.1 at 2013-09-25 20:06:14 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mOffre Load (0.3ms)[0m  SELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered offres/show.html.erb within layouts/application (6.7ms)
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/offres/2" for 127.0.0.1 at 2013-09-25 20:08:16 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mOffre Load (0.2ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered offres/show.html.erb within layouts/application (7.8ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 20:08:20 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered offres/show.html.erb within layouts/application (7.7ms)
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/offres/1" for 127.0.0.1 at 2013-09-25 20:08:27 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mOffre Load (0.2ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered offres/show.html.erb within layouts/application (7.9ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 26ms (Views: 22.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/offres/" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+Processing by OffresController#index as HTML
+  [1m[36mOffre Load (0.3ms)[0m  [1mSELECT "offres".* FROM "offres"[0m
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb__47738083612126070_69959449008060 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:39)
+  Rendered offres/partial/_form (0.2ms)
+  Rendered offres/index.html.erb within layouts/application (15.1ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 20:11:48 +0200
+
+
+Started GET "/offres/2" for 127.0.0.1 at 2013-09-25 20:13:30 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered offres/show.html.erb within layouts/application (44.4ms)
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/offres/new" for 127.0.0.1 at 2013-09-25 20:47:58 +0200
+Processing by OffresController#new as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "authors"
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_new_html_erb___2443070856167287674_37547380 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/new.html.erb:3)
+  Rendered offres/_form (50.6ms)
+  Rendered offres/new.html.erb within layouts/application (52.3ms)
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 69ms (Views: 65.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-25 21:10:50 +0200
+Processing by AuthorSessionsController#new as HTML
+  Rendered author_sessions/new.html.erb within layouts/application (1.4ms)
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AoGCUY8uxG6rM+xZKiFNsv/B4GXrkChtQP1ehjvTUNk=", "username"=>"julie", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE (username = 'julie') ORDER BY "authors"."id" ASC LIMIT 1[0m
+  Rendered author_sessions/new.html.erb within layouts/application (1.5ms)
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 19ms (Views: 14.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:10 +0200
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AoGCUY8uxG6rM+xZKiFNsv/B4GXrkChtQP1ehjvTUNk=", "username"=>"julie", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.3ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE (username = 'julie') ORDER BY "authors"."id" ASC LIMIT 1[0m
+  Rendered author_sessions/new.html.erb within layouts/application (0.9ms)
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 18ms (Views: 15.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:28 +0200
+
+
+Started POST "/author_sessions" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+Processing by AuthorSessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AoGCUY8uxG6rM+xZKiFNsv/B4GXrkChtQP1ehjvTUNk=", "username"=>"romain2", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE (username = 'romain2') ORDER BY "authors"."id" ASC LIMIT 1[0m
+  Rendered author_sessions/new.html.erb within layouts/application (0.7ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:38 +0200
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+Processing by ProfilsController#index as HTML
+  [1m[36mProfil Load (0.1ms)[0m  [1mSELECT "profils".* FROM "profils"[0m
+  Rendered profils/index.html.erb within layouts/application (2.4ms)
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 67ms (Views: 19.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:58 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:59 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:59 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:59 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:59 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:11:59 +0200
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-25 21:12:01 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/_form.html.erb (161.7ms)
+  Rendered profils/new.html.erb within layouts/application (180.7ms)
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 234ms (Views: 231.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/profils/authors" for 127.0.0.1 at 2013-09-25 21:12:48 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"authors"}
+  [1m[35mProfil Load (0.4ms)[0m  SELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1  [["id", "authors"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Profil with id=authors):
+  app/controllers/profils_controller.rb:15:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/profils/authors/new" for 127.0.0.1 at 2013-09-25 21:12:59 +0200
+
+ActionController::RoutingError (No route matches [GET] "/profils/authors/new"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.9ms)
+
+
+Started GET "/profils/author" for 127.0.0.1 at 2013-09-25 21:13:17 +0200
+Processing by ProfilsController#show as HTML
+  Parameters: {"id"=>"author"}
+  [1m[36mProfil Load (0.2ms)[0m  [1mSELECT "profils".* FROM "profils" WHERE "profils"."id" = ? LIMIT 1[0m  [["id", "author"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Profil with id=author):
+  app/controllers/profils_controller.rb:15:in `show'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.2ms)
+
+
+Started GET "/profils/" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+Processing by ProfilsController#index as HTML
+  [1m[35mProfil Load (0.2ms)[0m  SELECT "profils".* FROM "profils"
+  Rendered profils/index.html.erb within layouts/application (1.3ms)
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:35 +0200
+
+
+Started GET "/profils/new" for 127.0.0.1 at 2013-09-25 21:13:42 +0200
+Processing by ProfilsController#new as HTML
+  Rendered profils/_form.html.erb (6.5ms)
+  Rendered profils/new.html.erb within layouts/application (8.1ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/offres" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+Processing by OffresController#index as HTML
+  [1m[36mOffre Load (0.4ms)[0m  [1mSELECT "offres".* FROM "offres"[0m
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb__47738083612126070_69959449008060 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:39)
+  Rendered offres/partial/_form (0.2ms)
+  Rendered offres/index.html.erb within layouts/application (14.2ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:13:53 +0200
+
+
+Started GET "/offres/2" for 127.0.0.1 at 2013-09-25 21:32:14 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mOffre Load (0.1ms)[0m  SELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered offres/show.html.erb within layouts/application (3.5ms)
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 18ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 21:32:49 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mOffre Load (0.2ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered offres/show.html.erb within layouts/application (28.9ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 45ms (Views: 41.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered offres/show.html.erb within layouts/application (8.2ms)
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 25ms (Views: 21.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:44:30 +0200
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mOffre Load (0.1ms)[0m  [1mSELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  Rendered offres/show.html.erb within layouts/application (5.0ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:47:53 +0200
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres" WHERE "offres"."id" = ? LIMIT 1  [["id", "3"]]
+  Rendered offres/show.html.erb within layouts/application (4.2ms)
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 38ms (Views: 33.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 21:52:46 +0200
+
+
+Started GET "/offres" for 127.0.0.1 at 2013-09-25 22:03:14 +0200
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.4ms)[0m  SELECT "offres".* FROM "offres"
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb__47738083612126070_69959449011260 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:39)
+  Rendered offres/partial/_form (0.7ms)
+  Rendered offres/index.html.erb within layouts/application (16.8ms)
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.6ms)
+  [1m[36mAuthor Load (0.4ms)[0m  [1mSELECT "authors".* FROM "authors"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (34.0ms)[0m  [1mINSERT INTO "authors" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Wed, 25 Sep 2013 20:06:09 UTC +00:00], ["email", "juleww@yahoo.fr"], ["updated_at", Wed, 25 Sep 2013 20:06:09 UTC +00:00], ["username", "julien"]]
+  [1m[35m (164.9ms)[0m  commit transaction
+
+
+Started GET "/authors" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AuthorsController#index as HTML
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors"
+  Rendered authors/index.html.erb within layouts/application (48.3ms)
+  [1m[36mAuthor Load (34.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 216ms (Views: 128.2ms | ActiveRecord: 34.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 22:06:47 +0200
+
+
+Started GET "/authors/new" for 127.0.0.1 at 2013-09-25 22:07:37 +0200
+Processing by AuthorsController#new as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/
+Filter chain halted as :zero_authors_or_authenticated rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-25 22:07:37 +0200
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres"
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb___3614823422826763797_70306807498240 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:39)
+  Rendered offres/partial/_form (0.6ms)
+  Rendered offres/index.html.erb within layouts/application (67.4ms)
+  [1m[36mAuthor Load (0.2ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 87ms (Views: 78.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-25 22:07:47 +0200
+Processing by AuthorSessionsController#new as HTML
+  Rendered author_sessions/new.html.erb within layouts/application (1.3ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/offres" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+Processing by OffresController#index as HTML
+  [1m[36mOffre Load (0.3ms)[0m  [1mSELECT "offres".* FROM "offres"[0m
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb___3614823422826763797_70306603463660 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:39)
+  Rendered offres/partial/_form (0.8ms)
+  Rendered offres/index.html.erb within layouts/application (15.1ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-25 22:08:23 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-25 22:08:24 +0200
+
+
+Started GET "/offres/3" for 127.0.0.1 at 2013-09-25 22:09:30 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+  [1m[35mAuthor Load (0.2ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Redirected to http://localhost:3000/login
+Filter chain halted as :zero_authors_or_authenticated rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-25 22:09:31 +0200
+Processing by AuthorSessionsController#new as HTML
+  Rendered author_sessions/new.html.erb within layouts/application (0.8ms)
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/offres/2" for 127.0.0.1 at 2013-09-25 22:09:37 +0200
+Processing by OffresController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "authors"
+  [1m[36mAuthor Load (0.1ms)[0m  [1mSELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/login
+Filter chain halted as :zero_authors_or_authenticated rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-25 22:09:37 +0200
+Processing by AuthorSessionsController#new as HTML
+  Rendered author_sessions/new.html.erb within layouts/application (0.9ms)
+  [1m[35mAuthor Load (0.1ms)[0m  SELECT "authors".* FROM "authors" WHERE "authors"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-09-26 09:50:19 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by OffresController#index as HTML
+  [1m[35mOffre Load (0.2ms)[0m  SELECT "offres".* FROM "offres"
+DEPRECATION WARNING: The file /home/julienlinux/Documents/profil/blogger3/app/views/offres/partial/_form did not specify a template handler. The default is currently ERB, but will change to RAW in the future. (called from _app_views_offres_index_html_erb__3871813580019511339_31004200 at /home/julienlinux/Documents/profil/blogger3/app/views/offres/index.html.erb:39)
+  Rendered offres/partial/_form (1.1ms)
+  Rendered offres/index.html.erb within layouts/application (171.8ms)
+Completed 200 OK in 724ms (Views: 647.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-09-26 09:50:20 +0200
+
+
+Started GET "/assets/offres.css?body=1" for 127.0.0.1 at 2013-09-26 09:50:20 +0200
+
+
+Started GET "/assets/profils.css?body=1" for 127.0.0.1 at 2013-09-26 09:50:20 +0200
+
+
+Started GET "/assets/sceen.css?body=1" for 127.0.0.1 at 2013-09-26 09:50:20 +0200
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2013-09-26 09:50:20 +0200
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2013-09-26 09:50:20 +0200
+
+
+Started GET "/assets/tags.css?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/profils.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/offres.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/tags.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-09-26 09:50:21 +0200
+
+
+Started GET "/offres/new" for 127.0.0.1 at 2013-09-26 09:53:25 +0200
+Processing by OffresController#new as HTML
+  [1m[36m (10.4ms)[0m  [1mSELECT COUNT(*) FROM "authors"[0m
+Redirected to http://localhost:3000/login
+Filter chain halted as :zero_authors_or_authenticated rendered or redirected
+Completed 302 Found in 93ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2013-09-26 09:53:25 +0200
+Processing by AuthorSessionsController#new as HTML
+  Rendered author_sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
