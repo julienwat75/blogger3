@@ -22,9 +22,8 @@
 
 
 <h3>Commentaires:</h3>
-<%= render partial: 'authors/authors/comment', collection: @author.comments %>
+<%= render partial: 'authors/authors/comment', collection: @authors.comments %>
 
-<%= render partial: 'authors/comments/form' %>
 
 
 

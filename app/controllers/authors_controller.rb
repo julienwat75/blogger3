@@ -19,6 +19,12 @@ end
   # GET /authors/1
   # GET /authors/1.json
   def show
+
+    @authors = Author.find(params[:id]) #reccupere l'id de l url
+   @comment = Comment.new
+  @comment.author_id = @authors.id   # On initialise l'element "profil_id" de l objet "comment" avec l'id du profil
+
+
   end
 
   # GET /authors/new

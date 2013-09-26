@@ -4,7 +4,6 @@ class CreateComments < ActiveRecord::Migration
       t.string :author_name
       t.text :body
       t.references :profil, index: true
-       t.references :author, index: true
 
       t.timestamps
     end

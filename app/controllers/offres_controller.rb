@@ -45,7 +45,7 @@ def create              # le submit va chercher la methode create
   @offres.prix_medium = params[:offre][:prix_medium]  # on reccupere le nom du form
   @offres.prix_large = params[:offre][:prix_large]  # on reccupere le
   @offres.photo = params[:offre][:photo] 
-  @offres.profil_id ="8"
+  @offres.author_id ="1"
   @offres.save   #on sauvegarde
    redirect_to offres_path     # redirection vers l'index
 

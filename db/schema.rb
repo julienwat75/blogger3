@@ -26,10 +26,12 @@ ActiveRecord::Schema.define(version: 20130923194450) do
     t.string   "author_name"
     t.text     "body"
     t.integer  "profil_id"
+    t.integer  "author_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "comments", ["author_id"], name: "index_comments_on_author_id"
   add_index "comments", ["profil_id"], name: "index_comments_on_profil_id"
 
   create_table "invitations", force: true do |t|
@@ -46,10 +48,12 @@ ActiveRecord::Schema.define(version: 20130923194450) do
     t.float    "prix_medium"
     t.float    "prix_large"
     t.integer  "profil_id"
+    t.integer  "author_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "offres", ["author_id"], name: "index_offres_on_author_id"
   add_index "offres", ["profil_id"], name: "index_offres_on_profil_id"
 
   create_table "profils", force: true do |t|
