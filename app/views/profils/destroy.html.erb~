@@ -1,5 +1,0 @@
-<h1><%= @profils.id %></h1>
-
-<% id=@profils.id  %>
-<% profils.destroy %>
-<p> Destruction du profil <%=id %> </p>
